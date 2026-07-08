@@ -28,7 +28,7 @@ const categories = [
   {
     id: 6,
     name: "Mini Bouquets",
-    image: "/images/categories/mini.jpg",
+    image: "/images/categories/minibouquet.jpg",
   }
 ];
 
