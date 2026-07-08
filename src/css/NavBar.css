@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Poppins,sans-serif;
+    background:#FFF8F6;
+}
+
+/* ===========================
+   TOP NAVBAR
+=========================== */
+
+.navbar{
+    width:100%;
+    background:#facfc3;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 5%;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    flex-shrink:0;
+}
+
+.logo img{
+    height:45px;
+    width:auto;
+    display:block;
+    object-fit:contain;
+}
+
+.nav-icons{
+    display:flex;
+    align-items:center;
+    gap:22px;
+    font-size:22px;
+}
+
+.nav-icons svg{
+    color: #000000;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.nav-icons svg:hover{
+    color:#ffffff;
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+.search-box{
+    width:100%;
+    max-width:550px;
+    display:flex;
+    align-items:center;
+    background:#F5F5F5;
+    border-radius:40px;
+    padding:12px 18px;
+}
+
+.search-icon{
+    color:#999;
+    margin-right:10px;
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:15px;
+}
+
+.desktop-search{
+    margin:0 30px;
+    flex:1;
+}
+
+.mobile-search-container{
+    display:none;
+    background:white;
+    padding:15px 5%;
+}
+
+/* ===========================
+   BOTTOM NAVBAR
+=========================== */
+
+.bottom-navbar{
+    background:rgb(255, 255, 255);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
+    padding:16px 5%;
+    box-shadow:0 2px 5px rgba(0,0,0,.05);
+    flex-wrap:wrap;
+}
+
+.bottom-navbar a{
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+    transition:.3s;
+}
+
+.bottom-navbar a:hover{
+    color:#f49874;
+}
+
+/* ===========================
+   MENU BUTTON
+=========================== */
+
+.menu-btn{
+    display:none;
+    border:none;
+    background:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    position:fixed;
+    left:-280px;
+    top:0;
+    width:260px;
+    height:100vh;
+    background:white;
+    padding:80px 25px;
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+    transition:.35s;
+    box-shadow:4px 0 20px rgba(0,0,0,.15);
+    z-index:1001;
+}
+
+.sidebar.open{
+    left:0;
+}
+
+.sidebar a{
+    text-decoration:none;
+    color:#444;
+    font-size:18px;
+}
+
+.close-btn{
+    position:absolute;
+    right:20px;
+    top:20px;
+    background:none;
+    border:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* ===========================
+   OVERLAY
+=========================== */
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.3);
+    visibility:hidden;
+    opacity:0;
+    transition:.3s;
+    z-index:1000;
+}
+
+.overlay.show{
+    visibility:visible;
+    opacity:1;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:992px){
+
+     .logo img{
+        height:55px;
+    }
+
+    .desktop-search{
+        max-width:400px;
+    }
+
+    .bottom-navbar{
+        gap:20px;
+    }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+    .navbar{
+        padding:15px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .logo{
+        flex:1;
+        display:flex;
+        justify-content:center;
+    }
+
+    .logo img{
+        height:45px;
+    }
+
+    .desktop-search{
+        display:none;
+    }
+
+    .mobile-search-container{
+        display:block;
+    }
+
+    .bottom-navbar{
+        display:none;
+    }
+
+    .nav-icons{
+        font-size:18px;
+        gap:14px;
+    }
+}
+
+/* ===========================
+   SMALL PHONES
+=========================== */
+
+@media(max-width:480px){
+
+    .logo img{
+        height:38px;
+    }
+    .nav-icons{
+        gap:10px;
+        font-size:16px;
+    }
+
+    .search-box{
+        padding:10px 15px;
+    }
+
+}
