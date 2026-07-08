@@ -23,7 +23,7 @@ const categories = [
   {
     id: 5,
     name: "Anniversary",
-    image: "/images/categories/anniversary.jpg",
+    image: "/images/categories/aniversary.jpg",
   },
   {
     id: 6,
