@@ -8,7 +8,7 @@ const categories = [
   {
     id: 2,
     name: "Bubu Dudu",
-    image: "/images/categories/bubu.jpg",
+    image: "/images/categories/bubududu.jpg",
   },
   {
     id: 3,
