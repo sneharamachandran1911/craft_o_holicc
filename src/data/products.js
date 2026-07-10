@@ -1,5 +1,5 @@
 import sunflower1 from "../assets/bouquet.jpg";
-import sunflower2 from "../assets/bouquet.jpg";
+import sunflower2 from "../assets/hero.jpg";
 
 import bubu1 from "../assets/bouquet.jpg";
 import bubu2 from "../assets/bouquet.jpg";
