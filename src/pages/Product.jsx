@@ -1,6 +1,11 @@
 function Product(){
     return(
-        <>Product</>
+        <>
+        Product
+        </>
+        
+
+        
     );
 }
 export default Product
