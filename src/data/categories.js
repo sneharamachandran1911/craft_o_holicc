@@ -13,17 +13,17 @@ const categories = [
   {
     id: 3,
     name: "Crochet dolls",
-    image: "/images/categories/dolls.jpg",
+    image: "/images/categories/crosit.jpg",
   },
   {
     id: 4,
     name: "Custom Orders",
-    image: "/images/categories/custom.jpg",
+    image: "/images/categories/Cust.jpg",
   },
   {
     id: 5,
-    name: "Anniversary",
-    image: "/images/categories/aniversary.jpg",
+    name: "Sports",
+    image: "/images/categories/Virat.jpg",
   },
   {
     id: 6,

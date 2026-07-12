@@ -1,0 +1,148 @@
+.reviews-page {
+  background: #FDEDEA;
+  padding: 60px 48px 80px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.reviews-tagline {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  color: #D9748F;
+  margin: 0 0 6px;
+}
+
+.reviews-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #333333;
+  margin: 0 0 24px;
+}
+
+.reviews-intro {
+  margin-bottom: 44px;
+}
+
+.reviews-summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.reviews-average {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #D9748F;
+  line-height: 1;
+}
+
+.reviews-summary-text p {
+  font-size: 13px;
+  color: #777777;
+  margin: 4px 0 0;
+}
+
+.review-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 15px;
+  color: #F0D3D9;
+}
+
+.star-filled {
+  color: #D9748F;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.review-card {
+  background: #FFFFFF;
+  border: 1.5px solid #F3D8DC;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.review-card:hover {
+  border-color: #D9748F;
+  box-shadow: 0 10px 24px rgba(217, 116, 143, 0.12);
+  transform: translateY(-3px);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.review-avatar {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 50%;
+  background: #FBE1E6;
+  border: 2px solid #D9748F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #C2517A;
+}
+
+.review-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333333;
+  margin: 0;
+}
+
+.review-date {
+  font-size: 11px;
+  color: #999999;
+  margin: 2px 0 0;
+}
+
+.review-comment {
+  font-size: 13px;
+  color: #6B6B6B;
+  line-height: 1.65;
+  margin: 12px 0 16px;
+  flex: 1;
+}
+
+.review-product {
+  align-self: flex-start;
+  background: #FCE7E0;
+  border: 1px solid #F3C6D3;
+  color: #C2517A;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 14px;
+}
+
+@media (max-width: 900px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}

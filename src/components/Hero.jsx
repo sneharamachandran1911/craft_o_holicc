@@ -1,5 +1,5 @@
 import "../css/Hero.css";
-import heroImage from "../assets/bouquet.jpg";
+import heroImage from "/images/categories/Arranged.jpeg";
 
 function Hero() {
   return (

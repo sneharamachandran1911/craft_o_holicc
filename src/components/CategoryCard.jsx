@@ -12,7 +12,7 @@ function CategoryCard({ category }) {
       />
 
       <div className="category-overlay">
-        <h3>{category.name}</h3>
+        <h4>{category.name}</h4>
       </div>
     </Link>
   );

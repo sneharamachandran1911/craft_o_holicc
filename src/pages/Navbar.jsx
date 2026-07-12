@@ -62,7 +62,7 @@ function NavBar() {
         <Link to="/best-sellers">Best Sellers</Link>
         <Link to="/reviews">Reviews</Link>
         <Link to="/contact">Contact</Link>
-        <Link to="/about">About Us</Link>
+        <Link to="/about">About</Link>
       </nav>
 
       {/* Sidebar */}
