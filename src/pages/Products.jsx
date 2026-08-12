@@ -9,18 +9,25 @@ function Products() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    api
-      .get("/products")
-      .then((res) => {
-        setProducts(res.data);
+    const fetchProducts = async () => {
+      try {
+        const response = await api.get("/products");
+
+        console.log("Product data:", response.data);
+
+        setProducts(response.data);
+      } catch (err) {
+        console.error("Error fetching products:", err);
+
+        setError(
+          "Could not load products. Please try again later."
+        );
+      } finally {
         setLoading(false);
-        console.log("productdata",res.data);
-      })
-      .catch((err) => {
-        console.error(err);
-        setError("Could not load products. Please try again later.");
-        setLoading(false);
-      });
+      }
+    };
+
+    fetchProducts();
   }, []);
 
   return (
@@ -28,22 +35,40 @@ function Products() {
 
       <div className="products-header">
         <h1>Our Collection</h1>
+
         <p>
           Handmade with love, crafted just for you.
         </p>
       </div>
 
-      {loading && <p className="products-status">Loading products...</p>}
-      {error && <p className="products-status products-error">{error}</p>}
+      {loading && (
+        <p className="products-status">
+          Loading products...
+        </p>
+      )}
+
+      {error && (
+        <p className="products-status products-error">
+          {error}
+        </p>
+      )}
 
       {!loading && !error && (
         <div className="products-grid">
-          {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-            />
-          ))}
+
+          {products.length > 0 ? (
+            products.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+              />
+            ))
+          ) : (
+            <p className="products-status">
+              No products available.
+            </p>
+          )}
+
         </div>
       )}
 
