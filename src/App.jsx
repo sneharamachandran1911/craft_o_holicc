@@ -11,6 +11,7 @@ import CustomOrder from './pages/CustomOrder.jsx'
 import Reviews from './pages/Reviews.jsx'
 import About from './pages/About.jsx'
 import Login from './pages/Login.jsx'
+import ProductForm from './admin/ProductForm.jsx'
 
 
 
@@ -30,6 +31,7 @@ function App() {
      <Route path = "/reviews" element={<Reviews/>}/>
      <Route path = "/about" element={<About/>}/>
      <Route path="/login" element={<Login/>} />
+     <Route path="/admin" element={<ProductForm/>} />
     </Routes>
 
     </>
